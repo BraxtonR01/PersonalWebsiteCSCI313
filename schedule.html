@@ -3,39 +3,46 @@
   <head>
     <meta charset="utf-8">
 
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
     <title>Braxton Rolle Website</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <header>
-      <h1>Braxton Rolle's Schedule</h1>
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="https://github.com/BraxtonR01" target="_blank"><img src="GitHub-Mark-64px.png"></a></li>
-      </ul>
-     </nav>
+    <nav class="navbar navbar-dark bg-primary">
+      <div class="container">
+          <ul class="nav navbar-nav">
+            <li><h3 class="navbar-text">Braxton Rolle's Schedule</h3></li>
+          </ul>
+          <div>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="schedule.html">Schedule</a></li>
+              <li><a class="navbar-brand" href="https://github.com/BraxtonR01" target="_blank"><img class="d-inline-block align-top" src="GitHub-Mark-Light-32px.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
      <main>
-     <article>
-         <table class="sTable">
+     <div class="container">
+         <table class="table">
              <tr><th>Hour</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th></tr>
-             <tr><td>10 am</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-             <tr><td>11 am</td><td class="cw">CSCI 313</td><td></td><td class="cw">CSCI 313</td><td></td><td class="cw">CSCI 313</td><td></td><td></td></tr>
-             <tr><td>12 pm</td><td></td><td class="cw">CSCI 336</td><td></td><td class="cw">CSCI 336</td><td></td><td class="LoL">NDSU LoL Game</td><td></td></tr>
-             <tr><td>1 pm</td><td class="cw">CSCI 474</td><td class="cw">CSCI336</td><td class="cw">CSCI 474</td><td class="cw">CSCI336</td><td class="cw">CSCI 474</td><td class="LoL">NDSU LoL Game</td><td></td></tr>
-             <tr><td>2 pm</td><td class="cw">CSCI 371</td><td class="cw">STAT 368</td><td class="cw">CSCI 371</td><td class="cw">STAT 368</td><td class="cw">CSCI 371</td><td class="LoL">NDSU LoL Game</td><td></td></tr>
-             <tr><td>3 pm</td><td></td><td class="cw">STAT 368</td><td></td><td class="cw">STAT 368</td><td></td><td></td><td></td></tr>
-             <tr><td>4 pm</td><td></td><td class="ACM">SIG-collaborate</td><td></td><td></td><td></td><td></td><td></td></tr>
-             <tr><td>5 pm</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-             <tr><td>6 pm</td><td class="ACM">ACM weekly meeting</td><td></td><td></td><td class="ACM">SIG-Gdev</td><td></td><td></td><td></td></tr>
-             <tr><td>7 pm</td><td></td><td></td><td></td><td class="ACM">SIG-Gdev</td><td class="LoL">NDSU LoL Game</td><td></td><td></td></tr>
+             <tr><th>10 am</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+             <tr><th>11 am</td><td class="cw">CSCI 313</td><td></td><td class="cw">CSCI 313</td><td></td><td class="cw">CSCI 313</td><td></td><td></td></tr>
+             <tr><th>12 pm</td><td></td><td class="cw">CSCI 336</td><td></td><td class="cw">CSCI 336</td><td></td><td class="LoL">NDSU LoL Game</td><td></td></tr>
+             <tr><th>1 pm</td><td class="cw">CSCI 474</td><td class="cw">CSCI336</td><td class="cw">CSCI 474</td><td class="cw">CSCI336</td><td class="cw">CSCI 474</td><td class="LoL">NDSU LoL Game</td><td></td></tr>
+             <tr><th>2 pm</td><td class="cw">CSCI 371</td><td class="cw">STAT 368</td><td class="cw">CSCI 371</td><td class="cw">STAT 368</td><td class="cw">CSCI 371</td><td class="LoL">NDSU LoL Game</td><td></td></tr>
+             <tr><th>3 pm</td><td></td><td class="cw">STAT 368</td><td></td><td class="cw">STAT 368</td><td></td><td></td><td></td></tr>
+             <tr><th>4 pm</td><td></td><td class="ACM">SIG-collaborate</td><td></td><td></td><td></td><td></td><td></td></tr>
+             <tr><th>5 pm</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+             <tr><th>6 pm</td><td class="ACM">ACM weekly meeting</td><td></td><td></td><td class="ACM">SIG-Gdev</td><td></td><td></td><td></td></tr>
+             <tr><th>7 pm</td><td></td><td></td><td></td><td class="ACM">SIG-Gdev</td><td class="LoL">NDSU LoL Game</td><td></td><td></td></tr>
          </table>
-     </article>
+        </div>
     </main>
   </body>
 </html>

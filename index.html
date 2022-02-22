@@ -3,25 +3,37 @@
   <head>
     <meta charset="utf-8">
 
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Braxton Rolle Website</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <header>
-      <h1>Braxton Rolle's Website</h1>
-    </header>
+    <nav class="navbar navbar-dark bg-primary">
+      <div class="container">
+          <ul class="nav navbar-nav">
+            <li><h3 class="navbar-text">Braxton Rolle's Website</h3></li>
+          </ul>
+          <div>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="schedule.html">Schedule</a></li>
+              <li><a class="navbar-brand" href="https://github.com/BraxtonR01" target="_blank"><img class="d-inline-block align-top" src="GitHub-Mark-Light-32px.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="https://github.com/BraxtonR01" target="_blank"><img src="GitHub-Mark-64px.png"></a></li>
-      </ul>
-     </nav>
-
-    <main>
-      <div class="hobbies">
+    <div class="container">
+      <div class="col-sm-3 sidenav" >
         <h2>Hobbies</h2>
 
         <ol>
@@ -51,15 +63,15 @@
         </ol>
       </div>
 
-      <article>
+      <div class="col-sm-6 text-center">
         <h2>About Me</h2>
         <p>My name is Braxton Rolle, and I am a current student studying Computer Science at NDSU. I am from Hebron, ND and I am currently in my 6th semester of college. I transferred after receiving my associates in Computer Science at BSC. I plan to attend graduate school here as well in pursuit of my Masters in Computer Science. I am incredibly passionate about video games and their development, as well as general software development. I am hoping to work as a video game or software developer in the future. </p>
         <br/>
-        <table class="about">
+        <table>
           <tr><th><h3>Free Time</h3></th><th><h3>Other Projects</h3></th></tr>
           <tr>
             <td><p>
-              My hobbies, listed to the right, take up a lot of my free time. I was involved on the collegiate League of Legends and Rocket League teams at BSC. I am involved in some NDSU clubs, also listed to the right, of which I spend lots of time participating in. I am on the League of Legends varsity competitive team and hope to run for office in the club towards the end of this semester. I also participate in SIG-collaborate and SIG-Gdev through the NDSU ACM chapter. For work, I am a undergraduate researcher through NDSU, where I have published <a href="https://www.mdpi.com/2227-9032/10/2/344" target="_blank">one paper</a> and currently am working on publishing another.
+              My hobbies, listed to the left, take up a lot of my free time. I was involved on the collegiate League of Legends and Rocket League teams at BSC. I am involved in some NDSU clubs, also listed to the right, of which I spend lots of time participating in. I am on the League of Legends varsity competitive team and hope to run for office in the club towards the end of this semester. I also participate in SIG-collaborate and SIG-Gdev through the NDSU ACM chapter. For work, I am a undergraduate researcher through NDSU, where I have published <a href="https://www.mdpi.com/2227-9032/10/2/344" target="_blank">one paper</a> and currently am working on publishing another.
             </p></td>
             <td><p>
               Lots of my bigger projects are on my Github (linked top right of this page). On top of my coursework, I am currently working on redesigning a python game engine into C# through SIG-collaborate with some other members, a 3-D platformer with some members of SIG-Gdev, and a tower defense game in C# using Unity.
@@ -67,9 +79,9 @@
             </p></td>
         </tr>
         </table>
-      </article>
+      </div>
 
-      <div class="favorites">
+      <div id="favorites" class="col-sm-3 sidenav">
         <h2>Favorites</h2>
         <h3>Movies</h3>
 
@@ -93,8 +105,8 @@
           <li>Arcane</li>
         </ul>
       </div>
-
-    </main>
+      </div>
+    </div>
 
   </body>
 </html>

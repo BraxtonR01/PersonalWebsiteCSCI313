@@ -1,165 +1,68 @@
-/* || General setup */
-
-html, body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  html {
-    font-size: 10px;
-    background-color: #c2c2c2;
-  }
-  
-  body {
-    width: 70%;
-    margin: 0 auto;
-    position:relative;
-  }
-  
-  /* || typography */
-  
-  h1, h2, h3 {
-    font-family: "Lucida Console", Monaco, monospace;
-    color: #1b1b1b;
-  }
-  
-  p, input, li {
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: #2a2a2a;
-  }
-  
-  header h1 {
-    font-size: 4rem;
-    text-align: center;
-    color: white;
-    background-color: #1e7ce9;
-    width:50%;
-    margin: 0 auto;
-    padding:1%;
-  }
-  
-  h2 {
-    font-size: 3rem;
-    text-align: center;
-  }
-  
-  h3 {
-    font-size: 2.2rem;
-  }
-  
-  p, li {
-    font-size: 1.6rem;
-    line-height: 1.5;
-  }
-  
-  /* || header layout */
-  
-  nav, article, .hobbies, .favorites, footer {
-    background-color: white;
-    padding: 1%;
-  }
-  
-  article table{
-    text-align: center;
-    width:100%;
-  }
-
-  article table th{
-    width:12%;
-  }
-
-  .sTable th, .sTable td{
-    border: 1px solid;
-  }
-
-  .sTable th{
-    font-size: 20px;
-    line-height: 2em;
-  }
-
-  .sTable td{
-    font-size: 16px;
-    line-height: 3em;
-  }
-
-  .cw{
-    background-color:cornflowerblue;
-  }
-
-  .ACM{
-    background-color:forestgreen;
-  }
-
-  .LoL{
-    background-color: orange;
-  }
-
-  .sTable{
-    border:5px solid;
-    border-collapse: collapse;
-    line-height: 3em;
-  }
-  
-.about{
-  border:none;
+.nav.navbar-nav.navbar-right li a{
+  color:white;
 }
 
-  nav {
-    height: 64px;
-    background-color: #1e7ce9;
-    display: flex;
-    margin-bottom: 10px;
-  }
-  
-  nav ul {
-    padding: 0;
-    list-style-type: none;
-    flex: 2;
-    display: flex;
-  }
-  
-  nav li {
-    display: inline;
-    text-align: center;
-    flex: 1;
-    font-weight:800;
-  }
-  
-  nav a {
-    display: inline-block;
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-  }
+.active{
+  background-color: #206e97;
+}
 
-  /* || main layout */
-  
-  main {
-    display: flex;
-  }
-  
-  article {
-    flex: 4;
-  }
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: transparent !important;
+}
 
-  img{
-    height:50px;
-    width:50px;
-  }
+h3, h2 {
+  text-align: center;
+  font-family:'Courier New', monospace;;
+}
 
-  .favorites {
-    flex: 1;
-    margin-left: 10px;
-    background-color: #f0f0f0;
-  }
-  
-  .hobbies {
-    flex: 1;
-    background-color: #f0f0f0;
-    margin-right: 10px;
-  }
-  
-  .favorites li {
-    padding-bottom: 10px;
-  }
+
+.col-sm-3.sidenav{
+  background-color:azure;
+  margin-top: -20px;
+}
+
+td{
+  vertical-align: top;
+}
+
+.col-sm-6{
+    margin-top: -20px;
+}
+
+li span {
+  position: relative;
+  left: -10px;
+}
+td, th{
+  padding-right:20px;
+}
+
+li a{
+  color:blue;
+}
+
+.LoL{
+  background-color:cornflowerblue;
+}
+
+.ACM{
+  background-color: coral;
+}
+
+.cw{
+  background-color:lightgreen ;
+}
+
+td, th {
+  width:13%;
+  height:50px;
+}
+
+table{
+  table-layout: fixed;
+}
+
+th{
+  text-align: center;
+}
